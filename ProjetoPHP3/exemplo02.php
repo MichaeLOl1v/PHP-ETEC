@@ -23,6 +23,5 @@
 
 	mysqli_close($con);
 
-
-
  ?>
+
