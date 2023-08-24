@@ -8,4 +8,5 @@ nomeCli varchar(100),
 sobreNomeCli varchar(100),
 emailCli varchar(100),
 idadeCli int(3),
+cidadeCLI varchar(50),
 primary key(codCli))ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE utf8_unicode_ci;

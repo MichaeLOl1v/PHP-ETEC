@@ -11,8 +11,9 @@
 		$email = mysqli_escape_string($connection,$_POST['email']);
 		$idade = mysqli_escape_string($connection,$_POST['idade']);
 		$codCli = mysqli_escape_string($connection,$_POST['codCli']);
+		$cidadeCLI = mysqli_escape_string($connection,$_POST['cidadeCLI']);
 
-		$sql = "UPDATE tbClientes SET nomeCli = '$nome', sobreNomeCli = '$sobrenome', emailCli = '$email', idadeCli = '$idade' WHERE codCli = '$codCli'";
+		$sql = "UPDATE tbClientes SET nomeCli = '$nome', sobreNomeCli = '$sobrenome', emailCli = '$email', idadeCli = '$idade', cidadeCLI = '$cidadeCLI' WHERE codCli = '$codCli'";
 
 		if(mysqli_query($connection, $sql)) {
 

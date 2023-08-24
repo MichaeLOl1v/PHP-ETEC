@@ -10,8 +10,9 @@
 		$sobrenome = mysqli_escape_string($connection,$_POST['sobrenome']);
 		$email = mysqli_escape_string($connection,$_POST['email']);
 		$idade = mysqli_escape_string($connection,$_POST['idade']);
+		$cidade = mysqli_escape_string($connection,$_POST['cidade']);
 
-		$sql = "INSERT INTO tbClientes(nomeCli,sobreNomeCli,emailCli,idadeCli)VALUES('$nome','$sobrenome','$email','$idade')";
+		$sql = "INSERT INTO tbClientes(nomeCli,sobreNomeCli,emailCli,idadeCli,cidadeCLI)VALUES('$nome','$sobrenome','$email','$idade','$cidade')";
 
 		if(mysqli_query($connection, $sql)) {
 

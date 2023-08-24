@@ -30,6 +30,11 @@
 					<label for="idade">Idade</label>
 				</div>
 
+				<div class="input-field col s12">
+					<input type="text" name="cidade" id="cidade">
+					<label for="cidade">Cidade</label>
+				</div>
+
 				<button type="submit" name="btn-cadastrar" class="btn">Cadastrar</button>
 				
 				<a href="index.php" class="btn green">Lista de clientes</a>

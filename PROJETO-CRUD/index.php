@@ -18,6 +18,7 @@
 					<th>Sobrenome</th>
 					<th>E-mail</th>
 					<th>Idade</th>
+					<th>Cidade</th>
 				</tr>				
 			</	>
 			
@@ -38,6 +39,8 @@
 							<td><?php echo $dados['sobreNomeCli']; ?></td>
 							<td><?php echo $dados['emailCli']; ?></td>
 							<td><?php echo $dados['idadeCli']; ?></td>
+							<td><?php echo $dados['cidadeCLI']; ?></td>
+
 
 							<td><a href="alterar.php?id=<?php echo $dados['codCli']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
 
