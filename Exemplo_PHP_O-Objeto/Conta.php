@@ -29,6 +29,26 @@
 		function obterSaldo(){
 			return $this->saldo;
 		}
+
+		//método construtor inicializa propriedades
+		function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo)
+		{
+			$this->agencia = $agencia;
+			$this->codigo = $codigo;
+			$this->dataDeCriacao = $dataDeCriacao;
+			$this->titular = $titular;
+			$this->senha = $senha;
+
+			//chamada a outro método da classe
+			$this->depositar($saldo);
+			$this->cancelada = false;
+		}
+
+		//método destrutor finaliza objeto
+		function __destruct(){
+			echo "<br>Objeto conta {$this->codigo} de {$this->titular->nome} finalizada ... <br>";
+		}
+
 	}
 
 
